@@ -1,8 +1,8 @@
 # Docker documentation
 
 ### Running containers.
-| command |Parameters| Description |
-| ------------- | ------------------------------ |
+| command | parameters | description |
+|--|--|--|
 | `docker run` | name_container     | Start a container. |
 | `docker run` | --name |Name the container.|
 | `docker run -it` | name_container  |Start container in interactive mode.|
@@ -11,7 +11,7 @@
 
 ### Management containers.
 | command |Parameters| Description |
-| ------------- | ------------------------------ |
+| -- | -- | -- |
 | `docker ps` | |Show to active containers.|
 | `docker ps` | -a |Show all containers.|
 | `docker inspect` | ID or name |Show all information about the container.|
