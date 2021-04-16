@@ -8,6 +8,8 @@
 | `docker run -it` | name_container  |Start container in interactive mode.|
 | `docker run -d` | --name_container |Start a container with a proccess.|
 | `docker exec` | command or procces |Execute a command docker or proccess in a container.|
+| `docker -p` | localport : dockerport |Publish a port in localhost.|
+| `docker cp` |localcontent dockercontainer |Copy localfiles to container.|
 
 ### Management containers.
 | command |Parameters| Description |
@@ -19,3 +21,17 @@
 | `docker rm` | ID or name |Remove a disabled container.|
 | `docker container prune` ||Remove all disabled container.|
 | `docker stop` | ID or name |Kill a container.|
+
+### Volumen
+| command |Parameters| Description |
+| -- | -- | -- |
+| `docker volume ls` | |Show all docker volumens.|
+| `docker volume create` | name |Create new volume.|
+| `docker --mount` |src=volume,dst=location |Associate volumen and container data.|
+
+### Image
+| command |Parameters| Description |
+| -- | -- | -- |
+| `docker image ls` | |Show all docker images.|
+| `docker pull` |image |Download image from DockerHub.|
+
