@@ -3,13 +3,14 @@
 ### Running containers.
 | command | parameters | description |
 |--|--|--|
-| `docker run` | name_container     | Start a container. |
+| `docker run` | name_container | Start a container. |
 | `docker run` | --name |Name the container.|
 | `docker run -it` | name_container  |Start container in interactive mode.|
 | `docker run -d` | --name_container |Start a container with a proccess.|
 | `docker exec` | command or procces |Execute a command docker or proccess in a container.|
 | `docker -p` | localport : dockerport |Publish a port in localhost.|
 | `docker cp` |localcontent dockercontainer |Copy localfiles to container.|
+| `docker run --rm` | | Delete container when stop. |
 
 ### Management containers.
 | command |Parameters| Description |
@@ -34,4 +35,12 @@
 | -- | -- | -- |
 | `docker image ls` | |Show all docker images.|
 | `docker pull` |image |Download image from DockerHub.|
+| `docker build -t` | image:tag |Create new image.|
 
+### Dockerfile
+- **FROM**: Add an image.
+- **RUN**: Execute a command.
+- **COPY**: Copy files to localpc to docker container.
+- **WORDIRK**: Add workdirk.
+- **EXPOSE**: Allow expose a port.
+- **CMD**: Default command
