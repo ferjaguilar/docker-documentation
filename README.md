@@ -55,3 +55,29 @@
 - **WORDIRK**: Add workdirk.
 - **EXPOSE**: Allow expose a port.
 - **CMD**: Default command
+
+### Docker Compose
+- **Version**: Version of docker compose file.
+- **Services**: Add all services docker compose.
+- **Container name**: Add containers name.
+- **Image**: Add a image to docker compose.
+- **Build**: Build image from dockerfile
+- **Enviroment**: Create enviroment variables.
+- **Depends_on**: Connect containers.
+- **Ports**: Expose a ports.
+- **Volumes**: Create a volumen to a service.
+- **Command**: Exectute a specific commands.
+
+| command |Parameters| Description |
+| -- | -- | -- |
+| `docker-compose up` | |Start docker compose file.|
+| `docker-compose up -d` | |Start docker compose file background.|
+| `docker-compose ps` | |Show services up.|
+| `docker-compose exec` | service |Start a docker container.|
+| `docker-compose down` | |Destroy docker compose.|
+| `docker-compose build` | service |Re-build a service.|
+
+
+
+
+
